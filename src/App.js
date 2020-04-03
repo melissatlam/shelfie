@@ -14,6 +14,9 @@ import Header from './Components/Header/Header';
     render(){
   return (
     <div className="App">
+    <Header/>
+     <Dashboard/>
+     <Form/>
      
     </div>
     

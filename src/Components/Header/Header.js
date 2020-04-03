@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import './Header.css'
 
 
 
@@ -7,7 +8,7 @@ import axios from 'axios';
     render() {
         return (
             <div>
-               <h1>Header</h1>
+               <h1 className = 'title' >Shelfie</h1>
             </div>
         )
     }

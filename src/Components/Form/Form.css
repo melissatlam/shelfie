@@ -1,0 +1,16 @@
+/* .addToForm {
+   
+    height: 500px;
+} */
+
+.main {
+    
+    background-color: rgb(58, 216, 134);
+    width: 350px;
+    height: 520px;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
