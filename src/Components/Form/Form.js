@@ -42,7 +42,8 @@ class Form extends Component {
     // const {name,price,img} = this.state
     return (
         <div className = 'main'>
-            <img src = {this.state.img} alt=""/> <br/>
+
+            <img className ='pic' src = {this.state.img} alt=""/> <br/>
             <h3>Image URL</h3> <br/>
             <input  classname ='addToForm'type = "text" onChange={this.handleChange} name='img' /><br/>
             
@@ -55,8 +56,10 @@ class Form extends Component {
             
             
             {/* need to edit cancel button - not right i think */}
-            <button className = 'cancel' onClick={this.handleClick}>Cancel</button>
-            <button className = 'add' onClick={this.handleClick}>Add to Inventory</button>
+            {/* <button className = 'cancel' onClick={this.handleClick}>Cancel</button> */}
+            <div class = 'flex'>
+            <button className = 'button' onClick={this.handleClick}>Add to Inventory</button>
+            <button className = 'button' onClick = {this.deleteProducts}>Cancel</button></div>
         </div>
     )
 }

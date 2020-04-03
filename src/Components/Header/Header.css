@@ -1,7 +1,9 @@
 .title {
     background-color: rgb(171, 42, 25);
     height: 100px;
-    padding: 0px;
+    padding-top: 35px;
+    padding-left: 100px;
     margin:0px;
+    margin-bottom:70px;
     color: white;
 }

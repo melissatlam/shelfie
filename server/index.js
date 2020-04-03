@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require('express');
 const massive = require("massive");
+const IC = require('./controller');
 
 const app = express();
 const { SERVER_PORT, CONNECTION_STRING } = process.env;
@@ -17,14 +18,11 @@ massive({
 app.use(express.json());
 
 
-// const {getProducts, postProducts, updateProducts, removeProducts} = require('/controller')
-// const app = express();
-// app.use(express.json());
 
-// app.get('/api/shelfie', getProducts);
-// app.post('/api/shelfie', postProducts);
-// app.put('/api/shelfies/:id', updateProducts);
-// app.delete('/api/shelfie/:id', removeProducts);
+
+app.get('/api/inventory', IC.getInventory);
+app.post('/api/inventory', IC.addInventory);
+
 
 
 // const PORT = 4000

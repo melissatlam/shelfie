@@ -9,8 +9,25 @@
     width: 350px;
     height: 520px;
     padding: 15px;
+
     margin: 10px auto;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
+}
+
+.pic {
+    width: 250px;
+    
+}
+
+.button {
+    height:40px;
+    width:80px;
+    background-color:#ed6b5a;
+}
+
+.flex {
+    display:flex;
+
 }

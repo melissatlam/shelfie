@@ -26,8 +26,8 @@ export default Product
 //          this.state = {
 //              editStatus:false,
 //              name:'', 
-//             price:'', 
-//             img:''
+//              price: '' , 
+//              img:''
 //          }  
 //      }
 //      changeEditStatus = () => {
@@ -36,9 +36,9 @@ export default Product
 //      handleChange = e => {
 //          this.setState({[e.target.name]:e.target.value})
 //      }
-//      updateDoodles = () => {
-//          const {img,name,breed,info} = this.state
-//          axios.put(`/api/shelfie/${this.props.val.id}`,{name,price,img})
+//      updateProducts = () => {
+//          const {name,price,img} = this.state
+//          axios.put(`/api/shelfie/${this.props.val.id}`,{name, price, img})
 //          .then(response => {
 //              console.log(response)
 //              this.setState({editStatus: !this.state.editStatus})
@@ -49,7 +49,7 @@ export default Product
 //          })
 //      }
 
-//      deleteDoodles = () => {
+//      deleteProducts = () => {
 //         console.log(this.props.val.id)
 //          axios.delete(`/api/shelfie/${this.props.val.id}`)
 //          .then(response => {
@@ -68,7 +68,7 @@ export default Product
 //         console.log(this.state)
 //         return (
 //             <div>
-//                 <img className= 'adoptable' src={this.props.val.img}alt="img"/>
+//                 {/* <img className= 'adoptable' src={this.props.val.img}alt="img"/>
 //                 <h2>{this.props.val.name}</h2>
 //                 <p>{this.props.val.breed}</p>
 //                 <p class = 'newAdopt'>{this.props.val.info}</p>
@@ -89,7 +89,7 @@ export default Product
                     
 
 //                 }
-//                 <button onClick = {this.deleteProducts}>Delete</button>
+//                 <button onClick = {this.deleteProducts}>Delete</button> */}
 //             </div>
 //         )
 //     }

@@ -8,7 +8,7 @@ import './Header.css'
     render() {
         return (
             <div>
-               <h1 className = 'title' >Shelfie</h1>
+               <h1 className = 'title' >SHELFIE</h1>
             </div>
         )
     }
